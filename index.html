@@ -1,4 +1,19 @@
-<!DOCTYPE html>
+<!-- Booking section -->
+        <section class="max-w-4xl mx-auto mb-12 fade-in" style="animation-delay: 0.8s;">
+            <div class="bg-gradient-to-r from-purple-600 to-pink-600 dark:from-purple-700 dark:to-pink-700 rounded-2xl shadow-xl p-8 text-white text-center">
+                <h2 class="text-3xl font-bold mb-4">สำรองที่นั่ง</h2>
+                <p class="mb-6 text-lg">จำกัดจำนวนที่นั่ง รีบสำรองก่อนเต็ม!</p>
+                <div class="flex flex-col md:flex-row items-center justify-center gap-8">
+                    <div>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLScv5PXzJ0fxMKCGtuJyetuXBEqBVgML_sux5t8cGlz5BcTUBg/viewform?usp=header" 
+                           target="_blank"
+                           class="inline-block bg-white text-purple-700 font-bold py-4 px-8 rounded-full text-lg hover:bg-gray-100 transform transition-all hover:scale-110 hover:shadow-xl">
+                            คลิกเพื่อสำรองที่นั่ง
+                        </a>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg">
+                        <img src="data:image/png;base64,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<!DOCTYPE html>
 <html lang="th">
 <head>
     <meta charset="UTF-8">
@@ -150,16 +165,38 @@
     <section class="container mx-auto px-4 pb-8 fade-in">
         <div class="max-w-4xl mx-auto">
             <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-2xl p-4 md:p-8 hover-scale">
-                <img src="https://lh5.googleusercontent.com/d/11-X9_Xr6A7ZaxO8X5WbsNiv8Jl03vk3G" 
-                     alt="The Serenade with BMO Concert Official Poster"
-                     class="w-full h-auto rounded-lg shadow-lg"
-                     loading="lazy">
+                <div class="relative group cursor-pointer" onclick="openModal()">
+                    <img src="https://lh5.googleusercontent.com/d/11-X9_Xr6A7ZaxO8X5WbsNiv8Jl03vk3G" 
+                         alt="The Serenade with BMO Concert Official Poster"
+                         class="w-full h-auto rounded-lg shadow-lg transition-transform duration-300 group-hover:scale-[1.02]"
+                         loading="lazy">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 rounded-lg flex items-center justify-center">
+                        <svg class="w-12 h-12 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"></path>
+                        </svg>
+                    </div>
+                </div>
                 <div class="mt-4 text-center">
-                    <p class="text-sm text-gray-600 dark:text-gray-400 italic">โปสเตอร์อย่างเป็นทางการ</p>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 italic">คลิกเพื่อดูภาพขนาดใหญ่</p>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-90 z-50 hidden flex items-center justify-center p-4" onclick="closeModal()">
+        <div class="relative max-w-7xl mx-auto">
+            <img src="https://lh5.googleusercontent.com/d/11-X9_Xr6A7ZaxO8X5WbsNiv8Jl03vk3G" 
+                 alt="The Serenade with BMO Concert Official Poster"
+                 class="w-full h-auto rounded-lg"
+                 onclick="event.stopPropagation()">
+            <button onclick="closeModal()" class="absolute top-4 right-4 text-white bg-black bg-opacity-50 rounded-full p-2 hover:bg-opacity-70 transition-all">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
 
     <!-- Main content -->
     <main class="container mx-auto px-4 py-8">
@@ -295,6 +332,24 @@
                 localStorage.setItem('darkMode', 'false');
                 sunPath.classList.remove('hidden');
                 moonPath.classList.add('hidden');
+            }
+        });
+
+        // Image modal functions
+        function openModal() {
+            document.getElementById('imageModal').classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            document.getElementById('imageModal').classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal with ESC key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                closeModal();
             }
         });
 
